@@ -12,7 +12,7 @@ var bandName = "";
 app.use(bodyParser.urlencoded({extended: true}));
 
 function info(req, res, next){
-  console.log(req.body);
+  console.log(req.body); 
   bandName = req.body["street"] + req.body["pet"]
   next()
 }
