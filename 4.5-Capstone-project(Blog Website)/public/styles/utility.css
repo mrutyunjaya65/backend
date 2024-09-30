@@ -1,0 +1,20 @@
+:root{
+    --main-bg-color:brown;
+    
+}
+
+.max-width-1{
+    max-width: 80vw;
+}
+
+.max-width-2{
+    max-width: 60vw;
+}
+
+.max-width-3{
+    max-width: 40vw;
+}
+
+.m-auto{
+    margin: auto;
+}

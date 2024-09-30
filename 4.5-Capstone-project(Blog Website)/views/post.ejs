@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+<%- include("partials/navbar.ejs") %>
+
+<div class="content-wrapper">
+    <div class="post">
+        <section class="createPost">
+            <h1>Create post</h1>
+            <form action="/submitpost" method="post" class="input-box">
+                <% if (typeof successMessage !== 'undefined') { %>
+                    <p class="success-message" style="color: rgba(0, 159, 56, 0.959);"><%= successMessage %></p>
+                <% } %>
+                <input type="email" class="email" placeholder="Enter your Email">
+                <textarea name="textbox" id="textbox" placeholder="Write your post"></textarea>
+                <input type="file" id="file">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </div>
+</div>
+    
+<%- include("partials/footer.ejs") %>
